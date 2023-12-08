@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            font-family: arial,sans-serif;
+            background-color: white;
+            font-size: 50%;
+        }
+        .scrolling-text
+        {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scrollText 15s linear infinite;
+        }
+        @keyframes scrollText 
+        {
+            0%{transform: translateX(0%);}
+            100%{transform: translateX(100%);}
+            
+        }
+        .blinking-text
+        {
+            animation: blinkText 3s infinite;
+        }
+        @keyframes blinkText 
+        {
+            0%,100%{opacity:1 ;}
+            50%{opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="blinking-text">
+        <p>blinkText</p>
+    </div>
+    <div class="scrolling-text">
+        <p>scrolltext</p>
+    </div>
+
+    
+</body>
+</html>
